@@ -14,7 +14,7 @@ header
     height: 60px;
     position: fixed;
     z-index: 10;
-    background-color: rgba(72, 179, 235,1);
+    background-color: rgba(72, 179, 235,.9);
 }
 
 .name-heading
@@ -49,9 +49,9 @@ header
     text-align: center;
 }
 
-.row
+div.row
 {
-    height: calc( 100vh - 60px);
+    height: calc(100vh - 60px);
 }
 
 .container
@@ -70,4 +70,9 @@ header
 .columns
 {
     font-size:20px;
+}
+
+.midget-hr
+{
+    width:60%;
 }

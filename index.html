@@ -1,6 +1,9 @@
 <html>
     <head>
+        <title> Colin A. Campbell </title>
         <meta name="viewport" content="width=device-width"/>
+        <script src="script/jquery-3.3.1.js"></script>
+        <script src="script/view.js"></script>
         <link rel="stylesheet" href="styling/main.css"/>
         <link rel="stylesheet" href="styling/skeleton.css"/>
     </head>
@@ -10,14 +13,14 @@
         </header>
         <div class="lander">
             <div id="intro-box">
-                <h1>
+                <h1>    
                     Hey I'm Colin, I like to build stuff
-                    and You can <br/> <br/> 
+                    and You can ...<br/> <br/> 
                     <a class="button button-primary" href="#abt-row" style="z-index: 1"> Explore Me</a>
                 </h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="me">
             <div class="row" id="abt-row" style="z-index:10">
                 <div class="twelve columns">
 
@@ -30,19 +33,119 @@
                         <p> 
                             I'm Colin A. Campbell, a proud CS student and a proud Jamaican who enjoys doing
                             almost about anything that satisfy my interests. But there is nothing I love more than
-                            programming, designing and building software applictions. With regards to programming
+                            programming, designing and building software applications. With regards to programming
                             I'm always learning and keeping up to pace with the evolution of our changing technology - as I should.
-                        </p>
+                         </p>
                     </div>
 
                     <div class="six columns">
                         <p>
-                            Whether if it's for fun, or for business. I still enjoy the 
+                            Whether if it's for fun, for school, or an idea. I still enjoy the
+                            the art of it - by keeping it simple ( even though coding itself is an art). I aspire to be a software engineer and /or software 
+                            engineer so I've been learning to code from I was 16 years old. I didn't know what I was doing from start and had no intentions of a career in computer science 
+                            but I sure liked it. Some people call me a 'young prodigy', but I just call myself a good googler. Coding started a hobby but know its a part of a my life. 
                         </p>
                     </div>
 
-                </div>
+                </div>  
             </div>
+
+            
+            <div class="row" id="tech-row" style="z-index:10">
+                <div class="twelve columns">
+    
+                    <div class="command-element"> <!-- Commmand Element is just for headings, etc-->
+                        <h1> What's My Tech ?</h1>
+                        <hr/>
+                    </div>
+                        
+                    <div class="twelve columns" style="text-align: center">
+                        As I've mentioned earlier I try to learn as much as possible.
+                        Below are tables showing the technologies I know and the technologies
+                        I'm currently learning. The red asterick <span style="color:red">*</span> next to the name symbolizes that I'm 
+                        currently in the learning phase, but I still have fundemental knowledge of the 
+                        tool/language.
+
+                        <!-- Images here-->
+                        <div class="command-element">
+
+                            
+                            <hr class="midget-hr"/>
+                            <span class="row" id="image-row">
+                                <span class="six columns">
+                                    <img src="graphics/Android Logo.png"/>
+                                    <h4> Android (Mobile)</h4>
+                                    <hr class="criminal"/> <!-- TODO write js code to hide this element when not on mobile mode-->
+                                </span>
+                                <span class="six columns">
+                                    <img src="graphics/Angular Logo.png"/>
+                                    <h4> Angular <span style="color:red">*</span> (Web) </h4>
+                                    <hr class="criminal"/> <!-- TODO write js code to hide this element when not on mobile mode-->
+                                </span>
+                            </span>
+
+                            <hr class="midget-hr"/>
+                            <span class="row" id="image-row">
+    
+                                <span class="six columns">
+                                    <img src="graphics/Java Logo.png" width="256px"/>
+                                    <h4> Java (Desktop, etc)</h4>
+                                    <hr class="criminal"/>
+                                </span>
+      
+                                <span class="six columns">
+                                    <img src="graphics/Html5 Logo.png"/>
+                                    <h4> HTML5 (Web) </h4>
+                                    <hr class="criminal"/>
+                                </span>
+
+                            </span>
+
+                            <hr class="midget-hr"/>
+                            <span class="row" id="image-row">
+      
+                                <span class="six columns">
+                                    <img src="graphics/Javascript Logo.png"/>
+                                    <h4> Javascipt (Web & Mobile)</h4>
+                                    <hr class="criminal"/>
+                                </span>
+             
+                                <span class="six columns">
+                                    <img src="graphics/Jquery Logo.png"/>
+                                    <h4>  Jquery ( Complement to Javascript) </h4>
+                                    <hr class="criminal"/>
+                                </span>
+        
+                            </span>
+                            
+                            <hr class="midget-hr"/>
+                            <span class="row" id="image-row">
+  
+                                <span class="six columns">
+                                    <img src="graphics/AngularJs Logo.png" width="300px"/>
+                                    <h4> AngularJs (Complement to Javascipt) </h4>
+                                    <hr class="criminal"/> <!-- TODO write js code to hide this element when not on mobile mode-->
+                                </span>
+                      
+                                <span class="six columns">
+                                    <img src="graphics/PHP Logo.png" width="300px"/>
+                                    <h4> PHP (Web) </h4>
+                                    <hr class="criminal"/> <!-- TODO write js code to hide this element when not on mobile mode-->
+                                </span>
+
+                                <span class="twelve columns">
+                                    <img src="graphics/Flutter Logo.jpg" width="300px"/>
+                                    <h4> Flutter <span style="color:red">*</span> (IOS & Android) </h4>
+                                    <hr/> <!-- Criminal Class made to disapear when the viewport is not suitable-->
+                                </span>
+            
+                            </span>
+                        </div>
+                    </div>
+    
+                </div>  
+            </div>
+
         </div>
     </body>
 </html>
