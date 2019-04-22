@@ -10,7 +10,7 @@ I've design and built the website bearing simplicity in mind. Here are the files
    didn't see the need to use href links to other pages for a small project.
    
  * ## skeleton.css - location : `styling/skeleton.css`
-    Real simple css framework for a small project.  The column, row and bottom classes were utilized and some other components customized 
+    Real simple css framework for a small project.  The column, row and button classes were utilized and some other components customized 
     in the file.
     
  * ## main.css - location : `styling/main.css`
