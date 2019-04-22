@@ -2,6 +2,7 @@
 $(document).ready(()=>{
     controlHorizontalDivider();
     controlHeaderVisibility(); // works nowhere else, but in the .ready function
+    navContainerControl()
     showNotif();
 });
 
@@ -25,11 +26,15 @@ function controlHeaderVisibility()
     $(document).dblclick(()=>{
         if ( headerVisible)
         {
-            header.hide();
+            //header.hide();
+            header.animate({top:"-70px"},1000)
+            hideNav();
             headerVisible = false;
         } else
         {
-            header.show();
+            //header.show();
+            header.animate({top:"0px"},1000)
+            showNav();
             headerVisible = true;
         }
     })
@@ -45,4 +50,35 @@ function hideNotif()
 {
     let notifDiv = $("#notification");
     notifDiv.animate({left:"-350px"},1000);
+}
+
+/******   Regarding the navigation container   ******/
+
+function navContainerControl()
+{
+    isNavVisible = false;
+    if (window.outerWidth >= 902)
+    {
+        isNavVisible = true;
+    }
+
+    if ( isNavVisible )
+    {
+        showNav();
+    } else
+    {
+        hideNav();
+    }
+}
+
+function showNav()
+{
+    let nav = $("#nav-container");
+    nav.animate({right:"0px"},1000)
+}
+
+function hideNav()
+{
+    let nav = $("#nav-container");
+    nav.animate({right:"-250px"},1000)
 }
