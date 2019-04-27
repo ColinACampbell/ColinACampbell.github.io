@@ -5,9 +5,9 @@ $(document).ready(()=>{
     controlNavbar();
     showNotif();
 
-    $("#btn-holder").click = ()=>{
-        console.log("Hello world")
-    }
+    $('#btn-holder').on('click touchstart', function() {
+        console.log("Hello world");
+    });
 });
 
 
