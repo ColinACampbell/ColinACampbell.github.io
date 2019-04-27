@@ -24,10 +24,11 @@
     <body>
         <!-- Elements that have no constraints and are fixed are placed here-->
         <div id="notification">
-            Double tap the anywhere to hide/show the navigation bar
+            Double tap the anywhere to hide/show the header
             <button class="button" onclick="hideNotif()"> OK, Got it</button>
         </div>
         <div id="nav-container">
+            
             <div>
                 <hr style="width:70%"/>
                     <h5 style="color:white;">Quick Navigation</h5>
@@ -38,9 +39,13 @@
             <a href="#projects-row"> Projects </a>
             <a> Contact </a>
             <a href="#"> Back To Top </a>
+            <a onclick="hideNav()" style="color:red"> CLOSE </a>
         </div>
         <header title="Double click to hide me, and double click anywhere to bring me back">
             <h1 class="name-heading"> Colin Campbell </h1>
+            <span id="btn-holder" onclick="showNav()">
+                <img id="menu-btn" src="graphics/menu_hamburger.svg"/>
+            </span>
         </header>
         <div class="lander">
             <div id="intro-box">

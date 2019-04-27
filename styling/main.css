@@ -29,6 +29,19 @@ header
     z-index: 1;
 }
 
+#menu-btn
+{
+    position: relative;
+    float: right;
+    top:-50px;
+    right:20px;
+}
+
+#menu-btn:active
+{
+    background: rgba(72, 179, 235,1);
+}
+
 
 /** First thing the user sees when they go on the page**/
 .lander

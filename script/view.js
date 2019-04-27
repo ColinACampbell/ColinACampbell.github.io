@@ -2,9 +2,15 @@
 $(document).ready(()=>{
     controlHorizontalDivider();
     controlHeaderVisibility(); // works nowhere else, but in the .ready function
-    navContainerControl()
+    controlNavbar();
     showNotif();
+
+    $("#btn-holder").click = ()=>{
+        console.log("Hello world")
+    }
 });
+
+
 
 
 function controlHorizontalDivider()
@@ -28,13 +34,11 @@ function controlHeaderVisibility()
         {
             //header.hide();
             header.animate({top:"-70px"},1000)
-            hideNav();
             headerVisible = false;
         } else
         {
             //header.show();
             header.animate({top:"0px"},1000)
-            showNav();
             headerVisible = true;
         }
     })
@@ -53,28 +57,35 @@ function hideNotif()
 }
 
 /******   Regarding the navigation container   ******/
-
-function navContainerControl()
-{
-    isNavVisible = false;
-    if (window.outerWidth >= 902)
+function controlNavbar()
+{ 
+    let  navVisible = false;
+    if ( window.innerWidth >= 902)
     {
-        isNavVisible = true;
+        navVisible = true;
     }
 
-    if ( isNavVisible )
+    let _nav = document.getElementById("nav-container")
+
+    if (navVisible)
     {
-        showNav();
-    } else
+        showNav()
+    } else if (_nav.style.right === "0px")
     {
         hideNav();
+    } else if (_nav.style.right === "-250px")
+    {
+        showNav();
     }
+    
 }
+
 
 function showNav()
 {
     let nav = $("#nav-container");
     nav.animate({right:"0px"},1000)
+
 }
 
 function hideNav()
